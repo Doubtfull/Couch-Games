@@ -142,7 +142,7 @@ main {
     margin-left: 7px;
 }
 
-.platform-icon, .platform-right-icon, .platform-left-icon {
+.platform-icon, .platform-right-icon, .platform-left-icon, .platform-divider-icon {
     height: 20px;
     filter: invert(100%);
     mix-blend-mode: difference;
