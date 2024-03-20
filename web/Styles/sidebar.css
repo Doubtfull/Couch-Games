@@ -10,7 +10,6 @@
     scrollbar-width: thin;
 }
 
-
 .sidebar-title-holder {
     text-align: center;
 }
@@ -33,6 +32,7 @@
     background-color: rgb(48, 48, 48);
     cursor: pointer;
 }
+
 
 .sidebar-icon {
     height: 45px;
