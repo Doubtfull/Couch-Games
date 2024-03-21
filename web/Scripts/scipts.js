@@ -1,3 +1,10 @@
+let Theme = document.getElementById("Theme");
+Theme.onclick = function(){
+    document.body.classList.toggle("light_mode");
+    document.body.classList.toggle("main-lightmode");
+    document.body.classList.toggle("side-lightmode");
+}
+
 function adventure() {
     document.getElementById("catalogue").innerHTML = `
         <div class="game-card">
@@ -820,3 +827,5 @@ function singleplayer() {
             </div>
     `;
 }
+
+

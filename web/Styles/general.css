@@ -1,5 +1,15 @@
+:root {
+    --primary-color: rgb(8, 8, 8);
+    --secondary-color: white;
+}
+
+.main-lightmode {
+    --primary-color: white; 
+    --secondary-color: rgb(8, 8, 8);
+}
+
 body {
-    background-color: rgb(8, 8, 8);
+    background-color: var(--primary-color);
     color: white;
     margin: 0;
     padding: 0;
@@ -12,7 +22,7 @@ body {
 
 p {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
 }
 
 

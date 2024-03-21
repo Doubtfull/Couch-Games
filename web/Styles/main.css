@@ -1,11 +1,28 @@
+:root {
+    --primary-color2: rgb(22, 22, 22);
+    --primary-color3: rgb(196, 196, 196);
+    --secondary-color2: rgb(240, 240, 240);
+    --secondary-color3: rgb(82, 82, 82);
+}
+
+.light_mode {
+    --primary-color2: rgb(240, 240, 240);
+    --secondary-color2: rgb(22, 22, 22);
+    --primary-color3: rgb(82, 82, 82);
+}
+
+
 main {
     margin-left: 310px;
 }
-.poen-button {
-    background-color: white;
-    width: 20px;
-    height: 20px;
+.open-button {
+    background-color: blue;
+    width: 40px;
+    height: 40px;
     position: absolute;
+    top: -10px;
+    right: 30px;
+    cursor: pointer;
 }
 
 .header-page {
@@ -64,16 +81,18 @@ main {
     font-weight: bold;
     font-size: 34px;
     margin-bottom: 60px;
+    color: var(--secondary-color2);
 }
 
 .game-card {
     width: 273px;
-    background-color: rgb(22, 22, 22);
+    background-color: var(--primary-color2);
     border-radius: inherit;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.5s;
     position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .game-card:hover {
@@ -101,6 +120,7 @@ main {
     margin-left: 14px;
     width: 235px;
     float: left;
+    color: var(--secondary-color2);
 }
 
 .platform-icon-holder {
@@ -140,7 +160,7 @@ main {
 }
 
 .game-description {
-    color: rgb(189, 188, 188);
+    color: var(--primary-color3);
     font-size: 14px;
     position: absolute;
     top: -15px;
