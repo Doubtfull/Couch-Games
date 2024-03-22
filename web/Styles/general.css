@@ -4,7 +4,7 @@
 }
 
 .main-lightmode {
-    --primary-color: white; 
+    --primary-color: white;
     --secondary-color: rgb(8, 8, 8);
 }
 
@@ -26,4 +26,19 @@ p {
 }
 
 
+::-webkit-scrollbar {
+    width: 50px;
+}
 
+::-webkit-scrollbar-track {
+    background: #f100f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #886;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #585;
+}
