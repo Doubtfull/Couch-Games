@@ -27,18 +27,18 @@ p {
 
 
 ::-webkit-scrollbar {
-    width: 50px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f100f1;
+    background: #00000000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #886;
+    background: rgb(109, 109, 109);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #585;
+    background: rgb(65, 65, 65);
 }
