@@ -1,8 +1,27 @@
 let Theme = document.getElementById("Theme");
-Theme.onclick = function(){
+Theme.onclick = function () {
     document.body.classList.toggle("light_mode");
     document.body.classList.toggle("main-lightmode");
     document.body.classList.toggle("side-lightmode");
+}
+
+let searchBar = document.getElementById("searchBar")
+let games = []
+for (let i = 0; i < document.getElementById("catalogue").childElementCount; i++) {
+    let game = document.getElementById("catalogue").children.item(i)
+
+    games.push(game)
+}
+searchBar.onkeyup = (e) => {
+    let search = searchBar.value
+
+    games.forEach(game => {
+        if (game.id.toLowerCase().includes(search.toLowerCase()) && game.hidden) {
+            game.hidden = false
+        } else if (!game.id.toLowerCase().includes(search.toLowerCase()) && !game.hidden) {
+            game.hidden = true
+        }
+    })
 }
 
 function adventure() {
