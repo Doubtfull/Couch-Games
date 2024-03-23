@@ -1,5 +1,15 @@
+:root {
+    --primary-color: rgb(8, 8, 8);
+    --secondary-color: white;
+}
+
+.main-lightmode {
+    --primary-color: white;
+    --secondary-color: rgb(8, 8, 8);
+}
+
 .header {
-    left: 250px;
+    left: 270px;
     display: flex;
     top: 0;
     right: 0;
@@ -8,20 +18,68 @@
     height: 50px;
     border: white solid;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: var(--primary-color);
 }
 
 .left-section, .middle-section, .right-section {
-    width: 200px;
+    height: 50px;
+}
+
+.left-section, .right-section {
+    width: 300px;
 }
 
 .left-section {
     border: white solid;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .middle-section {
-    border: white solid;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 36px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.searchbar-icon-holder {
+    background-color: rgb(102, 102, 102);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    float: left;
+    justify-content: center;
+}
+
+.searchbar-icon {
+    height: 20px;
+}
+
+#searchBar {
+    border-width: 2px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    height: 35px;
+    color: var(--secondary-color);
+    padding-left: 10px;
+    font-family: Poppins, Roboto, Arial;
+    flex: 1;
+}
+
+#searchBar::placeholder {
+    color: var(--secondary-color);
+    font-family: Poppins, Roboto, Arial;
 }
 
 .right-section {

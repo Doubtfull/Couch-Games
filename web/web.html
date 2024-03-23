@@ -29,11 +29,11 @@
             <div class="sidebar-title-holder">
                 <p class="sidebar-title">Search by Genre</p>
             </div>
-            <div onclick="adventure();" class="sidebar-selection">
+            <div class="sidebar-selection" id="adventure">
                 <img src="Icons/Adventure Icon.png" alt="adventure icon" class="sidebar-icon">
                 <div class="sidebar-genre">Adventure</div>
             </div>
-            <div onclick="multiplayer();" class="sidebar-selection">
+            <div class="sidebar-selection" id="multiplayer">
                 <img src="Icons/Multiplayer Icon.png" alt="multiplayer icon" class="sidebar-icon">
                 <div class="sidebar-genre">Multiplayer</div>
             </div>
@@ -61,7 +61,7 @@
                 <img src="Icons/Fighting Icon.png" alt="fighting icon" class="sidebar-icon">
                 <div class="sidebar-genre">Fighting</div>
             </div>
-            <div class="sidebar-selection">
+            <div onclick="sports();" class="sidebar-selection">
                 <img src="Icons/Sports Icon.png" alt="sports icon" class="sidebar-icon">
                 <div class="sidebar-genre">Sports</div>
             </div>
@@ -74,10 +74,13 @@
     <!--Header-->
     <div class="header">
         <div class="left-section">
-            <div>check</div>
+            <div class="header-title">Couch Games</div>
         </div>
         <div class="middle-section">
-            <input type="text" id="searchBar">
+            <input type="text" id="searchBar" placeholder="Search">
+            <div class="searchbar-icon-holder">
+                <img class="searchbar-icon" src="Icons/Searchbar Icon.png" alt="searchbar icon">
+            </div>
         </div>
         <div class="right-section">
             <div class="open-button" id="Theme"></div>
@@ -135,7 +138,6 @@
                             the surface, searching for riches, or glory, or answers to old secrets.
                             As the enigmatic Knight, you&#39;ll traverse the depths, unravel its mysteries and conquer
                             its evils.
-
                         </p>
                     </div>
                 </div>
@@ -333,7 +335,7 @@
                     </div>
                 </div>
             </a>
-            <div class="game-card" id="Palword">
+            <div class="game-card" id="Palworld">
                 <div class="game-image-holder">
                     <img class="game-image" src="Photos/Palworld.jpg" alt="palworld">
                 </div>
@@ -342,7 +344,7 @@
                     <img class="platform-left-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                 </div>
                 <div class="title-button-format">
-                    <p class="game-title">Palword</p>
+                    <p class="game-title">Palworld</p>
                 </div>
                 <div class="game-description-holder">
                     <p class="game-description">

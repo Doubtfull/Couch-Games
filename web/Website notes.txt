@@ -1,42 +1,30 @@
-Goat Simulator 3
-Goat Simulator 3 has goats! Tall goats, and wacky goat variants yet to be discovered. Assert your own sense of 'style' with the latest fashionable nonsense from toilet rolls to tea trays. Be the goat you've always wanted to be.
-Gangbeasts
-Gang Beasts is a silly multiplayer party game with surly gelatinous characters, brutal slapstick fight sequences, and absurd hazardous environments, set in the mean streets of Beef City.
-Monster Hunter World
-As a hunter, you'll take on quests to hunt monsters in a variety of habitats. Take down these monsters and receive materials that you can use to create stronger weapons and armor in order to hunt even more dangerous monsters.
-Palword
-Fight, farm, build and work alongside mysterious creatures called "Pals" in this completely new multiplayer, open world survival and crafting game!
-Tom Clancy's Rainbow Six Siege
-Take on the world with intense 5-v-5 tactical online multiplayer, join forces to bring down enemy combatants in PvE or hone your skills in offline situational exercises. 
-Super Smash Bros. Ultimate
-Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros.
-Teken 8
-Experience the next chapter in the longest-running videogame storyline with 32 redesigned, unique fighters and master the all-new ‘Heat’ system to crush your opponents.
-Tony Hawk's Pro Skater 1 + 2
-Skate as the legendary Tony Hawk and the full Pro roster skate to songs from the era-defining soundtrack. Hit insane trick combos with the iconic handling of the Tony hawk’s Pro skater series
-Arms
-Whether you bring the fight to your friends over local wireless* or across the world via the Internet, reach beyond your limits. This is a fighting game unlike any you’ve played before, by any stretch of the imagination.
-SpongeBob SquarePants: Battle for Bikini Bottom
-Play as SpongeBob, Patrick and Sandy and show the evil Plankton that crime pays even less than Mr. Krabs. Want to save Bikini Bottom from lots of rampant robots with your mighty bubbles?
-Red Dead Redemption 2
-America, 1899. After a robbery goes wrong in the town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and bounty hunters massing on their heels, the gang must rob, steal and fight their way to survive.
-Microsoft Flight Simulator
-From gliders and helicopters to wide-body jets, fly highly detailed and accurate aircraft in the Microsoft Flight Simulator 40th Anniversary Edition.
-Dead by Daylight
-Rev your chainsaw, set some bear traps, become invisible, and much more. Practical or supernatural, each Killer has a unique power to master as you hunt and sacrifice Survivors
-Hogwarts Legacy
-Embark on a journey through familiar and new locations as you explore and discover magical beasts, craft potions, master spell casting, upgrade talents and become the wizard you want to be.
-Minecraft
-The world of Minecraft is vast, so why not take it beyond its blocky borders? Customize your device with our favorite Minecraft wallpapers, social banners, and more!
-Brawlhalla
-An epic platform fighter for up to 8 players online or local. Try casual free-for-alls, ranked matches, or invite friends to a private room. And it's free!
-Fire Emblem: Three Houses
-As their professor, you must lead your students in their academic lives and in turn-based, tactical RPG battles wrought with strategic, new twists to overcome.
-Slay the Spire
-We fused card games and roguelikes together to make the best single player deckbuilder we could. Craft a unique deck, encounter bizarre creatures, discover relics of immense power, and Slay the Spire!
-Persona 3 Reload
-Experience the pivotal game of the Persona series faithfully remade with cutting-edge graphics, modernized quality-of-life features, and signature stylish UI.
-Forza Horizon 5
-Enjoy limitless driving action in hundreds of the world’s greatest cars. Discover Historic cities, beaches, canyons, and breathtaking views in stunning, detailed resolution.
-Outer Worlds
-A very wonderful and fun game. It has its own way to play, and the quality is legendary. The dialogues and choices in the story are very great.
+    document.getElementById("The Legend Of Zelda: Breath of the Wild").classList.toggle("hidden");
+    document.getElementById("Lethal Company").classList.toggle("hidden");
+    document.getElementById("Hollow Knight").classList.toggle("hidden");
+    document.getElementById("Keyboard Warriors").classList.toggle("hidden");
+    document.getElementById("Persona 5 Royal").classList.toggle("hidden");
+    document.getElementById("Sea of Thieves").classList.toggle("hidden");
+    document.getElementById("Bloons TD 6").classList.toggle("hidden");
+    document.getElementById("Goat Simulator 3").classList.toggle("hidden");
+    document.getElementById("Gangbeasts").classList.toggle("hidden");
+    document.getElementById("Monster Hunter World").classList.toggle("hidden");
+    document.getElementById("Palworld").classList.toggle("hidden");
+    document.getElementById("Tom Clancy's Rainbow Six Siege").classList.toggle("hidden");
+    document.getElementById("Super Smash Bros. Ultimate").classList.toggle("hidden");
+    document.getElementById("Teken 8").classList.toggle("hidden");
+    document.getElementById("Tony Hawk's Pro Skater 1 + 2").classList.toggle("hidden");
+    document.getElementById("Arms").classList.toggle("hidden");
+    document.getElementById("Dead Cells").classList.toggle("hidden");
+    document.getElementById("Red Dead Redemption 2").classList.toggle("hidden");
+    document.getElementById("Microsoft Flight Simulator").classList.toggle("hidden");
+    document.getElementById("Dead by Daylight").classList.toggle("hidden");
+    document.getElementById("Hogwarts Legacy").classList.toggle("hidden");
+    document.getElementById("Minecraft").classList.toggle("hidden");
+    document.getElementById("Brawlhalla").classList.toggle("hidden");
+    document.getElementById("Fire Emblem: Three Houses").classList.toggle("hidden");
+    document.getElementById("Slay the Spire").classList.toggle("hidden");
+    document.getElementById("Persona 3 Reload").classList.toggle("hidden");
+    document.getElementById("Forza Horizon 5").classList.toggle("hidden");
+    document.getElementById("Outer Worlds").classList.toggle("hidden");
+    document.getElementById("Survive").classList.toggle("hidden");
+    document.getElementById("Balatro").classList.toggle("hidden");
