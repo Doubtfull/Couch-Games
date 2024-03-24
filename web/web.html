@@ -25,9 +25,13 @@
 <body>
     <!--Side Content-->
     <section>
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <div class="sidebar-title-holder">
                 <p class="sidebar-title">Search by Genre</p>
+            </div>
+            <div class="sidebar-selection" id="all">
+                <img src="Icons/All Icon.png" alt="adventure icon" class="sidebar-icon">
+                <div class="sidebar-genre">All</div>
             </div>
             <div class="sidebar-selection" id="adventure">
                 <img src="Icons/Adventure Icon.png" alt="adventure icon" class="sidebar-icon">
@@ -37,44 +41,49 @@
                 <img src="Icons/Multiplayer Icon.png" alt="multiplayer icon" class="sidebar-icon">
                 <div class="sidebar-genre">Multiplayer</div>
             </div>
-            <div onclick="singleplayer();" class="sidebar-selection">
+            <div class="sidebar-selection" id="singleplayer">
                 <img src="Icons/Single Player Icon.png" alt="single player icon" class="sidebar-icon">
                 <div class="sidebar-genre">Single Player</div>
             </div>
-            <div class="sidebar-selection">
+            <div class="sidebar-selection" id="openworld">
                 <img src="Icons/Open World Icon.png" alt="open world icon" class="sidebar-icon">
                 <div class="sidebar-genre">Open World</div>
             </div>
-            <div class="sidebar-selection">
+            <div class="sidebar-selection" id="roguelike">
                 <img src="Icons/Roguelike Icon.png" alt="rougelike icon" class="sidebar-icon">
                 <div class="sidebar-genre">Roguelike</div>
             </div>
-            <div class="sidebar-selection">
+            <div class="sidebar-selection" id="strategy">
                 <img src="Icons/Strategy Icon.png" alt="strategy icon" class="sidebar-icon">
                 <div class="sidebar-genre">Strategy</div>
             </div>
-            <div class="sidebar-selection">
+            <div class="sidebar-selection" id="indie">
                 <img src="Icons/Indie Icon.png" alt="indie icon" class="sidebar-icon">
                 <div class="sidebar-genre">Indie</div>
             </div>
-            <div class="sidebar-selection">
+            <div class="sidebar-selection" id="fighting">
                 <img src="Icons/Fighting Icon.png" alt="fighting icon" class="sidebar-icon">
                 <div class="sidebar-genre">Fighting</div>
             </div>
-            <div onclick="sports();" class="sidebar-selection">
+            <div onclick="sports();" class="sidebar-selection" id="sports">
                 <img src="Icons/Sports Icon.png" alt="sports icon" class="sidebar-icon">
                 <div class="sidebar-genre">Sports</div>
             </div>
-            <div onclick="test();" class="sidebar-selection">
+            <div class="sidebar-selection" id="shooter">
                 <img src="Icons/Shooter Icon.png" alt="shooter icon" class="sidebar-icon">
                 <div class="sidebar-genre">Shooter</div>
             </div>
         </div>
     </section>
     <!--Header-->
-    <div class="header">
+    <div class="header" id="header">
         <div class="left-section">
-            <div class="header-title">Couch Games</div>
+            <div class="sidebar-btn">
+                <img src="Icons/Menu Icon.png" alt="menu icon" id="sidebarbtn">
+            </div>
+            <a href="web.html">
+                <div class="header-title">Couch Games</div>
+            </a>
         </div>
         <div class="middle-section">
             <input type="text" id="searchBar" placeholder="Search">
@@ -83,11 +92,14 @@
             </div>
         </div>
         <div class="right-section">
-            <div class="open-button" id="Theme"></div>
+            <div class="open-button">
+                <img class="theme-img" src="Icons/Sun Icon.png" alt="theme image"  id="Theme">
+            </div>
+            
         </div>
     </div>
     <!--Main Content-->
-    <main>
+    <main id="main">
         <div class="header-page">
             <p class="title">Couch Games</p>
             <p class="description">A website with the best recommendation of video games</p>
@@ -335,24 +347,26 @@
                     </div>
                 </div>
             </a>
-            <div class="game-card" id="Palworld">
-                <div class="game-image-holder">
-                    <img class="game-image" src="Photos/Palworld.jpg" alt="palworld">
+            <a href="https://www.pocketpair.jp/palworld" id="Palworld">
+                <div class="game-card">
+                    <div class="game-image-holder">
+                        <img class="game-image" src="Photos/Palworld.jpg" alt="palworld">
+                    </div>
+                    <div class="platform-icon-holder">
+                        <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
+                        <img class="platform-left-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                    </div>
+                    <div class="title-button-format">
+                        <p class="game-title">Palworld</p>
+                    </div>
+                    <div class="game-description-holder">
+                        <p class="game-description">
+                            Fight, farm, build and work alongside mysterious creatures called "Pals" in this completely new
+                            multiplayer, open world survival and crafting game!
+                        </p>
+                    </div>
                 </div>
-                <div class="platform-icon-holder">
-                    <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                    <img class="platform-left-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
-                </div>
-                <div class="title-button-format">
-                    <p class="game-title">Palworld</p>
-                </div>
-                <div class="game-description-holder">
-                    <p class="game-description">
-                        Fight, farm, build and work alongside mysterious creatures called "Pals" in this completely new
-                        multiplayer, open world survival and crafting game!
-                    </p>
-                </div>
-            </div>
+            </a>
             <a href="https://www.ubisoft.com/en-ca/game/rainbow-six/siege" id="Tom Clancy's Rainbow Six Siege">
                 <div class="game-card">
                     <div class="game-image-holder">
@@ -360,9 +374,8 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
-                        <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                        <img class="platform-divider-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                        <img class="platform-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                     </div>
                     <div class="title-button-format">
                         <p class="game-title">Tom Clancy's Rainbow Six Siege</p>
@@ -382,10 +395,7 @@
                         <img class="game-image" src="Photos/ssbu.jpeg" alt="ssbu">
                     </div>
                     <div class="platform-icon-holder">
-                        <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
-                        <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
                     </div>
                     <div class="title-button-format">
                         <p class="game-title">Super Smash Bros. Ultimate</p>
@@ -407,8 +417,7 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -430,8 +439,8 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-left-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -453,10 +462,7 @@
                         <img class="game-image" src="Photos/Arms.jpg" alt="arms">
                     </div>
                     <div class="platform-icon-holder">
-                        <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
-                        <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
                     </div>
                     <div class="title-button-format">
                         <p class="game-title">Arms</p>
@@ -480,6 +486,8 @@
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
                         <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -501,8 +509,7 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -525,9 +532,7 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
-                        <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                        <img class="platform-divider-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
                         <p class="game-title">Microsoft Flight Simulator</p>
@@ -547,8 +552,8 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-right-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -570,8 +575,9 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -596,6 +602,7 @@
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
                         <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-right-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -619,6 +626,8 @@
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
                         <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -639,10 +648,7 @@
                         <img class="game-image" src="Photos/FETH.jpg" alt="fire emblem: three houses">
                     </div>
                     <div class="platform-icon-holder">
-                        <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
-                        <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
                     </div>
                     <div class="title-button-format">
                         <p class="game-title">Fire Emblem: Three Houses</p>
@@ -664,6 +670,8 @@
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
                         <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -686,7 +694,7 @@
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
                         <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -707,9 +715,7 @@
                     </div>
                     <div class="platform-icon-holder">
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                        <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                        <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
-                        <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
+                        <img class="platform-left-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
                         <p class="game-title">Forza Horizon 5</p>
@@ -731,6 +737,8 @@
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
                         <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">
@@ -739,33 +747,31 @@
                     </div>
                     <div class="game-description-holder">
                         <p class="game-description">
-                            During your journey through the furthest colony, you will meet a host of characters who will
-                            want to join your crew. Armed with unique abilities, these companions all have their own
-                            missions, motivations, and ideals. It's up to you to help them achieve their goals, or turn
-                            them to your own ends.
+                            During your journey through the furthest colony, you will meet a host of characters who will want to join your crew. These companions all have their own missions and motivations. It's up to you to help them achieve their goals, or turn them to your own ends.
                         </p>
                     </div>
                 </div>
             </a>
-            <div class="game-card" id="Survive">
-                <div class="game-image-holder">
-                    <img class="game-image" src="Photos/BTD6.jfif" alt="btd6">
+            <a href="https://talentless.itch.io/survive" id="Survive">
+                <div class="game-card">
+                    <div class="game-image-holder">
+                        <img class="game-image" src="Photos/Survive.png" alt="survive">
+                    </div>
+                    <div class="platform-icon-holder">
+                        <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
+                        <img class="platform-divider-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
+                        <img class="platform-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                    </div>
+                    <div class="title-button-format">
+                        <p class="game-title">Survive</p>
+                    </div>
+                    <div class="game-description-holder">
+                        <p class="game-description">
+                            You're being hunted and you have to find a safe house. With limited vision, traverse the infected city, kill all the zombies in your path. What happened to the city? Best to keep moving and ask questions later.
+                        </p>
+                    </div>
                 </div>
-                <div class="platform-icon-holder">
-                    <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
-                    <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
-                    <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
-                    <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
-                </div>
-                <div class="title-button-format">
-                    <p class="game-title">Survive</p>
-                </div>
-                <div class="game-description-holder">
-                    <p class="game-description">
-                        Cra
-                    </p>
-                </div>
-            </div>
+            </a>
             <a href="https://www.playbalatro.com" id="Balatro">
                 <div class="game-card">
                     <div class="game-image-holder">
@@ -775,6 +781,8 @@
                         <img class="platform-icon" src="Icons/Windows Icon.png" alt="Windows Icon">
                         <img class="platform-left-icon" src="Icons/Mac Icon.png" alt="Mac Icon">
                         <img class="platform-divider-icon" src="Icons/Linux Icon.png" alt="Linux Icon">
+                        <img class="platform-icon" src="Icons/Switch Icon.png" alt="Switch Icon">
+                        <img class="platform-divider-icon" src="Icons/Playstation Icon.png" alt="Playstation Icon">
                         <img class="platform-icon" src="Icons/Xbox Icon.png" alt="Xbox Icon">
                     </div>
                     <div class="title-button-format">

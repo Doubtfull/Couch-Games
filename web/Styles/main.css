@@ -21,8 +21,9 @@
 }
 main {
     margin-top: 100px;
-    margin-left: 310px;
+    margin-left: 20px;
     padding-bottom: 50px;
+    transition: margin-left 0.5s;
 }
 
 .header-page {
@@ -123,9 +124,7 @@ main {
 
 .platform-icon, .platform-right-icon, .platform-left-icon, .platform-divider-icon {
     height: 20px;
-    filter: invert(100%);
-    mix-blend-mode: difference;
-    
+    filter: contrast(1000%) brightness(110%);
 }
 
 .game-description-holder {

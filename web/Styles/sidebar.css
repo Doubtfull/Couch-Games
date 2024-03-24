@@ -8,14 +8,14 @@
 
 .side-lightmode {
     --primary-color4: rgb(248, 248, 248);
-    --primary-color5: rgb(241, 241, 241);
+    --primary-color5: rgb(223, 221, 221);
     --primary-color6: black;
     --secondary-color4: rgb(31, 31, 31);
     --secondary-color5: rgb(48, 48, 48);
 }
 
 .sidebar {
-    width: 250px;
+    width: 0px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -23,8 +23,9 @@
     background-color: var(--primary-color4);
     overflow-y: scroll;
     overflow-x: hidden;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: width 0.5s;
 }
 
 .sidebar *::-webkit-scrollbar {
@@ -50,6 +51,7 @@
 
 .sidebar-title {
     font-size: 26px;
+    white-space: nowrap;
     font-weight: bold;
 }
 
@@ -62,6 +64,7 @@
     height: 95px;
     width: 244px;
     border-radius: 12px;
+    white-space: nowrap;
 }
 
 .sidebar-selection:hover {
@@ -69,6 +72,13 @@
     cursor: pointer;
 }
 
+.active {
+    background-color: var(--primary-color5);
+}
+
+#shooter {
+    margin-bottom: 50px;
+}
 
 .sidebar-icon {
     height: 45px;
